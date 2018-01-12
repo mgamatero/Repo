@@ -1,24 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Student Bio</title>
+    <style>
+
+    body{
+        background-color: #efeee7;
+        margin:0;
+        padding:0;
+        font-family: "Georgia", "Times New Roman", Times, serif;
+        font-size: 18px;
+        line-height:150%;
+    }
+
+    h1{
+        color: #efeee7;
+        background-color: #333333;
+        margin:0;
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 28px;
+    }
+
+    h2{
+        font-size: 24px;
+    }
+
+    a{
+        color: #d21034;
+    }
+    
+ .container{
+     width: 1024px;
+     margin: 0 auto;
+ }
+ #bio-image{
+     width: 200px;
+     height: 200px;
+     margin-right: 20px;
+ }
+
+ #main-bio,
+ #contact-info,
+ #bio-image {
+     float: left;
+ }
+
+#main-bio{
+    width:70%;
+}
+
+#contact-info{
+    width: 30%;
+}
+        
+    </style>
 </head>
 <body>
-<h1>Student Bio</h1>
-<h2>Michael Gamatero</h2>
-<br>
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/MRT-3_Shaw_Boulevard_Station_Platform_2.jpg/1200px-MRT-3_Shaw_Boulevard_Station_Platform_2.jpg" alt="Shaw" width = 25%>  
-<br>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, alias perspiciatis optio fuga a quibusdam, perferendis facere quaerat sequi veniam non expedita eligendi enim debitis obcaecati autem. Voluptates, quidem obcaecati.</p>
-<h2>Contact Info</h2>
-<ul>
-    <li>Email:<a href="www.yahoo.com">www.yahoo.com</a></li>
-    <li>Github:<a href="www.github.com">www.github.com</a></li>
-    <li>Portfolio:<a href="www.yahoo.com">Portfolio</a></li>
-</ul>
+    <header>
+        <h1>Student Bio</h1>
+    </header>
+    
+    <div class="container">
+        <section id="main-bio">
+            <h2>Michael Gamatero</h2>
+       
+            <img id="bio-image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/MRT-3_Shaw_Boulevard_Station_Platform_2.jpg/1200px-MRT-3_Shaw_Boulevard_Station_Platform_2.jpg" alt="Shaw">  
+   
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+               Eos, alias perspiciatis optio fuga a quibusdam, perferendis 
+               facere quaerat sequi veniam non expedita eligendi enim debitis 
+               obcaecati autem. Voluptates, quidem obcaecati.</p>
+        </section>
+    
+        <section id="contact-info">
+            <h2>Contact Info</h2>
+            <ul>
+                <li>Email:<a href="www.yahoo.com">www.yahoo.com</a></li>
+                <li>Github:<a href="www.github.com">www.github.com</a></li>
+                <li>Portfolio:<a href="www.yahoo.com">Portfolio</a></li>
+            </ul>
+        </section>
+    </div>
 </body>
 </html>
 
